@@ -5,32 +5,35 @@ header, main, nav
 }
 body 
 { 
-  background-color : grey ;
+  background-color : #403330 ;
   color: yellow; 
   justify-content:center;
   
 }
 
 
-/*.column {*/
-/*  float: left;*/
-/*  width: 33.33%;*/
-/*  padding: 5px;*/
-/*}*/
-
-/* Clear floats after image containers */
-/*.row::after {*/
-/*  content: "";*/
-/*  clear: both;*/
-/*  display: table;*/
-/*}*/
 footer
 {
     text-align: center;
-    color: red;
+    color: white;
 }
 .pics
 {
     display:flex; /*align pics on same row */
     justify-content:center;
+    background-color: black; 
+    color : green ;
+}
+.move
+{
+  text-align: center; 
+  background-color: maroon; 
+  color : white; 
+  
+
+  
+}
+.picsAlign
+{
+  text-align: center; 
 }
