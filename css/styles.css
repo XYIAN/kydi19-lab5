@@ -37,3 +37,89 @@ footer
 {
   text-align: center; 
 }
+#gradient1 
+{
+  background-image: linear-gradient(180deg, brown, #000000);
+  height: 100px;
+}
+#gradient3 
+{
+        background-image: linear-gradient(180deg, #00ff00 20%, #0000ff 80%);
+        height: 100px;
+}
+#theButton
+{
+        background-color: white;
+        transition-property: background-color;
+        transition-duration: 2s;
+}
+#theButton:hover 
+{
+    background-color: black;
+}
+#shadow
+{
+  box-shadow: 5px 5px 6px #cccccc;
+  padding: 10px; border: 1px solid #eeeeee;
+}
+.withOpacity 
+{
+    opacity: 0.5;
+}
+
+.bluebag {
+    opacity: 0; 
+    background: blue;
+    height: 100px;
+    width: 100px; 
+    animation: opacityOn 5s normal forwards;
+    animation-delay: 2s;
+}
+
+@keyframes opacityOn {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* popup tool txt! */
+.tooltip 
+{
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+
+.tooltip .tooltiptext 
+{
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text*/
+  position: absolute;
+  z-index: 1;
+}
+
+
+.tooltip:hover .tooltiptext 
+{
+  visibility: visible;
+}

@@ -10,14 +10,14 @@ $(document).ready(function(){
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
     $("#searchButton").on("click", search);
-    var shuffName = ["WHALES", "LION" , "SHARK" , "SPACE"];
+    var shuffName = ["WHALES", "LION" , "SHARK" , "SPACE", "NUT" , "CORVETTE"];
     //_.shuffle(shuffName);
-    $("#keyword").val(shuffName[getRandomInt(0,3)]); 
+    $("#keyword").val(shuffName[getRandomInt(0,5)]); 
     search(); 
     
     
     function search(){
-        //alert("searching!");
+        alert("searching!");
         
         var pic = $("#dropDown").val();
         
@@ -60,8 +60,6 @@ $(document).ready(function(){
             $("#img2").html(`Likes: ${result.hits[1].likes}<br><img src='${result.hits[1].webformatURL}'  width="200">`);
             $("#img3").html(`Likes: ${result.hits[2].likes}<br><img src='${result.hits[2].webformatURL}'  width="200">`);
             $("#img4").html(`Likes: ${result.hits[3].likes}<br><img src='${result.hits[3].webformatURL}'  width="200">`);
-        
-            
         }
         });//ajax
     });
